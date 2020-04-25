@@ -1,0 +1,130 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #d6e5fa;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	background-color: #6ba8a9;
+	overflow : hidden;
+
+}
+	li{
+		float: left;
+	}
+
+ul li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 14px 14px;
+	font-style: none;
+
+}
+ul li a:hover{
+	background-color: #7e7f83;
+	border-radius: 10px;
+}
+
+h2{
+	text-align: center;
+	color: #27496d;
+	padding-top: 20px;
+	letter-spacing: 3px;
+	font-size: 35px;
+}
+
+
+
+
+
+/*tambah odp*/
+/**{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+}
+*/
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  /*padding: 0 0px;*/
+}
+
+.contact-form{
+  display: block;
+  max-width:300px;
+  margin: 0 auto;
+  background: #5f6769;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  /*margin-right: 50%; ojo dipencet */
+}
+
+.input-fields,
+.msg{
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  height: 10px;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+
+/*.msg textarea{
+  height: 200px;
+}
+*/
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #c5ecfd;
+}
+
+.btn {
+    background-color: rgb(117, 163, 163);
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  
+  .input-fields,
+  .msg{
+    width: 50%;
+  }
+}
